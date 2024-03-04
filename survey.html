@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style2.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="container survey-container">
+            <h1>Khảo sát về chuyên ngành cntt</h1>
+            <form id="surveyForm">
+                <div class="type">
+                    <h6 class="discribe">Nhóm 1: Lựa chọn đúng sai</h6>    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 1: Angular là một framework của JavaScript.</label><br>
+                        <input type="radio" id="question1_true" name="question1" value="true">
+                        <label for="question1_true">Đúng</label>
+                        <input type="radio" id="question1_false" name="question1" value="false">
+                        <label for="question1_false">Sai</label>
+                    </div>
+                    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 2: Java là một ngôn ngữ lập trình biên dịch.</label><br>
+                        <input type="radio" id="question2_true" name="question2" value="true">
+                        <label for="question2_true">Đúng</label>
+                        <input type="radio" id="question2_false" name="question2" value="false">
+                        <label for="question2_false">Sai</label>
+                    </div>
+    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 3: Python là một ngôn ngữ lập trình dạng script.</label><br>
+                        <input type="radio" id="question3_true" name="question3" value="true">
+                        <label for="question3_true">Đúng</label>
+                        <input type="radio" id="question3_false" name="question3" value="false">
+                        <label for="question3_false">Sai</label>
+                    </div>
+    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 4: HTML là một ngôn ngữ lập trình.</label><br>
+                        <input type="radio" id="question4_true" name="question4" value="true">
+                        <label for="question4_true">Đúng</label>
+                        <input type="radio" id="question4_false" name="question4" value="false">
+                        <label for="question4_false">Sai</label>
+                    </div>
+    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 5: CSS là ngôn ngữ dùng để thiết kế giao diện trang web.</label><br>
+                        <input type="radio" id="question5_true" name="question5" value="true">
+                        <label for="question5_true">Đúng</label>
+                        <input type="radio" id="question5_false" name="question5" value="false">
+                        <label for="question5_false">Sai</label>
+                    </div>
+    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 6: C++ là một ngôn ngữ lập trình hướng đối tượng.</label><br>
+                        <input type="radio" id="question6_true" name="question6" value="true">
+                        <label for="question6_true">Đúng</label>
+                        <input type="radio" id="question6_false" name="question6" value="false">
+                        <label for="question6_false">Sai</label>
+                    </div>
+    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 7: SQL là một ngôn ngữ dùng để truy vấn cơ sở dữ liệu.</label><br>
+                        <input type="radio" id="question7_true" name="question7" value="true">
+                        <label for="question7_true">Đúng</label>
+                        <input type="radio" id="question7_false" name="question7" value="false">
+                        <label for="question7_false">Sai</label>
+                    </div>
+    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 8: Ruby on Rails là một framework phát triển web.</label><br>
+                        <input type="radio" id="question8_true" name="question8" value="true">
+                        <label for="question8_true">Đúng</label>
+                        <input type="radio" id="question8_false" name="question8" value="false">
+                        <label for="question8_false">Sai</label>
+                    </div>
+    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 9: PHP là một ngôn ngữ lập trình phía server.</label><br>
+                        <input type="radio" id="question9_true" name="question9" value="true">
+                        <label for="question9_true">Đúng</label>
+                        <input type="radio" id="question9_false" name="question9" value="false">
+                        <label for="question9_false">Sai</label>
+                    </div>
+    
+                    <div class="truefalse-group">
+                        <label>Câu hỏi 10: JavaScript là một ngôn ngữ lập trình phía server.</label><br>
+                        <input type="radio" id="question10_true" name="question10" value="true">
+                        <label for="question10_true">Đúng</label>
+                        <input type="radio" id="question10_false" name="question10" value="false">
+                        <label for="question10_false">Sai</label>
+                    </div>
+                </div>
+
+                <div class="type">
+                    <h6 class="discribe">Nhóm 2: Chọn 1 trong 4 đáp án</h6>
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 11: HTML là viết tắt của?</label><br>
+                        <input type="radio" id="question11_option1" name="question11" value="A">
+                        <label for="question11_option1">A. Hyper Text Markup Language</label><br>
+                        <input type="radio" id="question11_option2" name="question11" value="B">
+                        <label for="question11_option2">B. High Tech Marketing Language</label><br>
+                        <input type="radio" id="question11_option3" name="question11" value="C">
+                        <label for="question11_option3">C. Hyperlink and Text Markup Language</label><br>
+                        <input type="radio" id="question11_option4" name="question11" value="D">
+                        <label for="question11_option4">D. None of the above</label><br>
+                    </div>
+    
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 12: CSS là viết tắt của?</label><br>
+                        <input type="radio" id="question12_option1" name="question12" value="A">
+                        <label for="question12_option1">A. Creative Style Sheets</label><br>
+                        <input type="radio" id="question12_option2" name="question12" value="B">
+                        <label for="question12_option2">B. Computer Style Sheets</label><br>
+                        <input type="radio" id="question12_option3" name="question12" value="C">
+                        <label for="question12_option3">C. Cascading Style Sheets</label><br>
+                        <input type="radio" id="question12_option4" name="question12" value="D">
+                        <label for="question12_option4">D. Colorful Style Sheets</label><br>
+                    </div>
+    
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 13: JavaScript được phát triển bởi?</label><br>
+                        <input type="radio" id="question13_option1" name="question13" value="A">
+                        <label for="question13_option1">A. Microsoft</label><br>
+                        <input type="radio" id="question13_option2" name="question13" value="B">
+                        <label for="question13_option2">B. Netscape</label><br>
+                        <input type="radio" id="question13_option3" name="question13" value="C">
+                        <label for="question13_option3">C. Sun Microsystems</label><br>
+                        <input type="radio" id="question13_option4" name="question13" value="D">
+                        <label for="question13_option4">D. Oracle</label><br>
+                    </div>
+    
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 14: SQL là viết tắt của?</label><br>
+                        <input type="radio" id="question14_option1" name="question14" value="A">
+                        <label for="question14_option1">A. Structured Language</label><br>
+                        <input type="radio" id="question14_option2" name="question14" value="B">
+                        <label for="question14_option2">B. Standardized Query Language</label><br>
+                        <input type="radio" id="question14_option3" name="question14" value="C">
+                        <label for="question14_option3">C. Structured Query Language</label><br>
+                        <input type="radio" id="question14_option4" name="question14" value="D">
+                        <label for="question14_option4">D. Stable Query Language</label><br>
+                    </div>
+    
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 15: Java được phát triển bởi?</label><br>
+                        <input type="radio" id="question15_option1" name="question15" value="A">
+                        <label for="question15_option1">A. Microsoft</label><br>
+                        <input type="radio" id="question15_option2" name="question15" value="B">
+                        <label for="question15_option2">B. Sun Microsystems</label><br>
+                        <input type="radio" id="question15_option3" name="question15" value="C">
+                        <label for="question15_option3">C. Apple</label><br>
+                        <input type="radio" id="question15_option4" name="question15" value="D">
+                        <label for="question15_option4">D. IBM</label><br>
+                    </div>
+    
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 16: PHP là viết tắt của?</label><br>
+                        <input type="radio" id="question16_option1" name="question16" value="A">
+                        <label for="question16_option1">A. Personal Hypertext Processor</label><br>
+                        <input type="radio" id="question16_option2" name="question16" value="B">
+                        <label for="question16_option2">B. Preprocessor Hypertext Processor</label><br>
+                        <input type="radio" id="question16_option3" name="question16" value="C">
+                        <label for="question16_option3">C. PHP: Hypertext Preprocessor</label><br>
+                        <input type="radio" id="question16_option4" name="question16" value="D">
+                        <label for="question16_option4">D. Personal Hypertext Preprocessor</label><br>
+                    </div>
+    
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 17: Bootstrap là một framework của?</label><br>
+                        <input type="radio" id="question17_option1" name="question17" value="A">
+                        <label for="question17_option1">A. Facebook</label><br>
+                        <input type="radio" id="question17_option2" name="question17" value="B">
+                        <label for="question17_option2">B. Google</label><br>
+                        <input type="radio" id="question17_option3" name="question17" value="C">
+                        <label for="question17_option3">C. Twitter</label><br>
+                        <input type="radio" id="question17_option4" name="question17" value="D">
+                        <label for="question17_option4">D. Microsoft</label><br>
+                    </div>
+    
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 18: XML là viết tắt của?</label><br>
+                        <input type="radio" id="question18_option1" name="question18" value="A">
+                        <label for="question18_option1">A. Extensible Markup Language</label><br>
+                        <input type="radio" id="question18_option2" name="question18" value="B">
+                        <label for="question18_option2">B. External Markup Language</label><br>
+                        <input type="radio" id="question18_option3" name="question18" value="C">
+                        <label for="question18_option3">C. Extensible Multimedia Language</label><br>
+                        <input type="radio" id="question18_option4" name="question18" value="D">
+                        <label for="question18_option4">D. Extensive Markup Language</label><br>
+                    </div>
+    
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 19: Node.js sử dụng ngôn ngữ lập trình nào?</label><br>
+                        <input type="radio" id="question19_option1" name="question19" value="A">
+                        <label for="question19_option1">A. JavaScript</label><br>
+                        <input type="radio" id="question19_option2" name="question19" value="B">
+                        <label for="question19_option2">B. Java</label><br>
+                        <input type="radio" id="question19_option3" name="question19" value="C">
+                        <label for="question19_option3">C. Python</label><br>
+                        <input type="radio" id="question19_option4" name="question19" value="D">
+                        <label for="question19_option4">D. Ruby</label><br>
+                    </div>
+    
+                    <div class="for-ques-group">
+                        <label>Câu hỏi 20: ASP.NET là một framework của?</label><br>
+                        <input type="radio" id="question20_option1" name="question20" value="A">
+                        <label for="question20_option1">A. Microsoft</label><br>
+                        <input type="radio" id="question20_option2" name="question20" value="B">
+                        <label for="question20_option2">B. Apple</label><br>
+                        <input type="radio" id="question20_option3" name="question20" value="C">
+                        <label for="question20_option3">C. Google</label><br>
+                        <input type="radio" id="question20_option4" name="question20" value="D">
+                        <label for="question20_option4">D. Oracle</label><br>
+                    </div>
+                </div>
+
+                <div class="type">
+                    <h6 class="discribe">Nhóm 3: Chọn nhiều đáp án</h6>
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 21: Ngôn ngữ lập trình phổ biến nhất hiện nay là?</label><br>
+                        <input type="checkbox" id="question21_option1" name="question21" value="A">
+                        <label for="question21_option1">A. JavaScript</label><br>
+                        <input type="checkbox" id="question21_option2" name="question21" value="B">
+                        <label for="question21_option2">B. Python</label><br>
+                        <input type="checkbox" id="question21_option3" name="question21" value="C">
+                        <label for="question21_option3">C. Java</label><br>
+                        <input type="checkbox" id="question21_option4" name="question21" value="D">
+                        <label for="question21_option4">D. C++</label><br>
+                    </div>
+    
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 22: Framework JavaScript phổ biến nhất là?</label><br>
+                        <input type="checkbox" id="question22_option1" name="question22" value="A">
+                        <label for="question22_option1">A. React</label><br>
+                        <input type="checkbox" id="question22_option2" name="question22" value="B">
+                        <label for="question22_option2">B. Angular</label><br>
+                        <input type="checkbox" id="question22_option3" name="question22" value="C">
+                        <label for="question22_option3">C. Vue.js</label><br>
+                        <input type="checkbox" id="question22_option4" name="question22" value="D">
+                        <label for="question22_option4">D. jQuery</label><br>
+                    </div>
+    
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 23: IDE nào thường được sử dụng cho lập trình Python?</label><br>
+                        <input type="checkbox" id="question23_option1" name="question23" value="A">
+                        <label for="question23_option1">A. PyCharm</label><br>
+                        <input type="checkbox" id="question23_option2" name="question23" value="B">
+                        <label for="question23_option2">B. Visual Studio Code</label><br>
+                        <input type="checkbox" id="question23_option3" name="question23" value="C">
+                        <label for="question23_option3">C. Sublime Text</label><br>
+                        <input type="checkbox" id="question23_option4" name="question23" value="D">
+                        <label for="question23_option4">D. Atom</label><br>
+                    </div>
+    
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 24: Công cụ quản lý phiên bản nào được sử dụng nhiều nhất trong lập trình?</label><br>
+                        <input type="checkbox" id="question24_option1" name="question24" value="A">
+                        <label for="question24_option1">A. Git</label><br>
+                        <input type="checkbox" id="question24_option2" name="question24" value="B">
+                        <label for="question24_option2">B. Subversion (SVN)</label><br>
+                        <input type="checkbox" id="question24_option3" name="question24" value="C">
+                        <label for="question24_option3">C. Mercurial</label><br>
+                        <input type="checkbox" id="question24_option4" name="question24" value="D">
+                        <label for="question24_option4">D. CVS</label><br>
+                    </div>
+    
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 25: Công nghệ nào được sử dụng để xây dựng ứng dụng di động?</label><br>
+                        <input type="checkbox" id="question25_option1" name="question25" value="A">
+                        <label for="question25_option1">A. React Native</label><br>
+                        <input type="checkbox" id="question25_option2" name="question25" value="B">
+                        <label for="question25_option2">B. Flutter</label><br>
+                        <input type="checkbox" id="question25_option3" name="question25" value="C">
+                        <label for="question25_option3">C. Xamarin</label><br>
+                        <input type="checkbox" id="question25_option4" name="question25" value="D">
+                        <label for="question25_option4">D. Tất cả các phương án trên</label><br>
+                    </div>
+    
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 26: Ngôn ngữ nào được sử dụng để phát triển ứng dụng iOS?</label><br>
+                        <input type="checkbox" id="question26_option1" name="question26" value="A">
+                        <label for="question26_option1">A. Swift</label><br>
+                        <input type="checkbox" id="question26_option2" name="question26" value="B">
+                        <label for="question26_option2">B. Objective-C</label><br>
+                        <input type="checkbox" id="question26_option3" name="question26" value="C">
+                        <label for="question26_option3">C. Java</label><br>
+                        <input type="checkbox" id="question26_option4" name="question26" value="D">
+                        <label for="question26_option4">D. C#</label><br>
+                    </div>
+    
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 27: Framework nào được sử dụng phổ biến trong phát triển web PHP?</label><br>
+                        <input type="checkbox" id="question27_option1" name="question27" value="A">
+                        <label for="question27_option1">A. Laravel</label><br>
+                        <input type="checkbox" id="question27_option2" name="question27" value="B">
+                        <label for="question27_option2">B. Symfony</label><br>
+                        <input type="checkbox" id="question27_option3" name="question27" value="C">
+                        <label for="question27_option3">C. CodeIgniter</label><br>
+                        <input type="checkbox" id="question27_option4" name="question27" value="D">
+                        <label for="question27_option4">D. Phalcon</label><br>
+                    </div>
+    
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 28: MongoDB là một loại gì?</label><br>
+                        <input type="checkbox" id="question28_option1" name="question28" value="A">
+                        <label for="question28_option1">A. Cơ sở dữ liệu quan hệ</label><br>
+                        <input type="checkbox" id="question28_option2" name="question28" value="B">
+                        <label for="question28_option2">B. Cơ sở dữ liệu SQL</label><br>
+                        <input type="checkbox" id="question28_option3" name="question28" value="C">
+                        <label for="question28_option3">C. Cơ sở dữ liệu không cấu trúc</label><br>
+                        <input type="checkbox" id="question28_option4" name="question28" value="D">
+                        <label for="question28_option4">D. Cơ sở dữ liệu phân cấp</label><br>
+                    </div>
+    
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 29: Nền tảng nào được sử dụng cho phát triển ứng dụng di động cho Android?</label><br>
+                        <input type="checkbox" id="question29_option1" name="question29" value="A">
+                        <label for="question29_option1">A. Java</label><br>
+                        <input type="checkbox" id="question29_option2" name="question29" value="B">
+                        <label for="question29_option2">B. Kotlin</label><br>
+                        <input type="checkbox" id="question29_option3" name="question29" value="C">
+                        <label for="question29_option3">C. C++</label><br>
+                        <input type="checkbox" id="question29_option4" name="question29" value="D">
+                        <label for="question29_option4">D. Tất cả các phương án trên</label><br>
+                    </div>
+    
+                    <div class="multi-choose-group">
+                        <label>Câu hỏi 30: Framework nào được sử dụng phổ biến trong phát triển web JavaScript?</label><br>
+                        <input type="checkbox" id="question30_option1" name="question30" value="A">
+                        <label for="question30_option1">A. React</label><br>
+                        <input type="checkbox" id="question30_option2" name="question30" value="B">
+                        <label for="question30_option2">B. Angular</label><br>
+                        <input type="checkbox" id="question30_option3" name="question30" value="C">
+                        <label for="question30_option3">C. Vue.js</label><br>
+                        <input type="checkbox" id="question30_option4" name="question30" value="D">
+                        <label for="question30_option4">D. Ember.js</label><br>
+                    </div>
+                </div>
+
+                <div class="type">
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 31: Mô tả về ngôn ngữ lập trình JavaScript?</label><br>
+                        <textarea id="question31" name="question31" rows="4" cols="50"></textarea><br>
+                    </div>
+    
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 32: Mô tả về framework React?</label><br>
+                        <textarea id="question32" name="question32" rows="4" cols="50"></textarea><br>
+                    </div>
+    
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 33: Điểm mạnh và điểm yếu của ngôn ngữ lập trình Python?</label><br>
+                        <textarea id="question33" name="question33" rows="4" cols="50"></textarea><br>
+                    </div>
+    
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 34: Ưu và nhược điểm của việc sử dụng công cụ quản lý phiên bản Git?</label><br>
+                        <textarea id="question34" name="question34" rows="4" cols="50"></textarea><br>
+                    </div>
+    
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 35: Sự khác biệt giữa ứng dụng di động native và hybrid?</label><br>
+                        <textarea id="question35" name="question35" rows="4" cols="50"></textarea><br>
+                    </div>
+    
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 36: Cách hoạt động của cơ sở dữ liệu NoSQL?</label><br>
+                        <textarea id="question36" name="question36" rows="4" cols="50"></textarea><br>
+                    </div>
+    
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 37: Ý nghĩa của MVC (Model-View-Controller) trong phát triển web?</label><br>
+                        <textarea id="question37" name="question37" rows="4" cols="50"></textarea><br>
+                    </div>
+    
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 38: Cách làm việc của Docker và containerization?</label><br>
+                        <textarea id="question38" name="question38" rows="4" cols="50"></textarea><br>
+                    </div>
+    
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 39: Cách sử dụng AJAX trong phát triển web?</label><br>
+                        <textarea id="question39" name="question39" rows="4" cols="50"></textarea><br>
+                    </div>
+    
+                    <div class="type-ques-group">
+                        <label>Câu hỏi 40: Ưu điểm của việc sử dụng công nghệ cloud?</label><br>
+                        <textarea id="question40" name="question40" rows="4" cols="50"></textarea><br>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="kiemTra()"><a href="result.html" style="color: white; text-decoration: none;">Gửi</a></button>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Lấy form
+        const form = document.getElementById('personal-info-form');
+
+        // Thêm sự kiện submit cho form
+        form.addEventListener('submit', function(event) {
+            // Ngăn chặn hành động mặc định của form
+            event.preventDefault();
+
+            // Lấy giá trị từ các trường input
+            const fullname = document.getElementById('fullname').value;
+            const dob = document.getElementById('dob').value;
+            const cccd = document.getElementById('cccd').value;
+            const address = document.getElementById('address').value;
+
+            // Lưu thông tin vào localStorage
+            localStorage.setItem('fullname', fullname);
+            localStorage.setItem('dob', dob);
+            localStorage.setItem('cccd', cccd);
+            localStorage.setItem('address', address);
+
+            // Chuyển hướng đến trang result.html sau khi lưu thành công
+            window.location.href = 'result.html';
+        });
+    </script>
+</body>
+</html>

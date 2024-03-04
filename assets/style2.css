@@ -1,0 +1,57 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfcf;
+}
+.overlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.survey-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; 
+    max-height: 80%; 
+    max-width: 80%; 
+}
+
+.survey-container h1{
+    font-size: 3.6vw;
+    font-weight: 600;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(94, 0, 0);
+}
+
+.type {
+    border-bottom: 1px solid rgb(94, 0, 0);
+}
+
+.truefalse-group {
+    padding: 20px 0;
+}
+
+.discribe {
+    font-size: 3vw;
+}
+
+.for-ques-group {
+    padding: 20px 0;
+}
+
+.multi-choose-group {
+    padding: 20px 0;
+}
+
+.type-ques-group {
+    padding: 20px;
+}
+
+button {
+    margin-top: 20px;
+}

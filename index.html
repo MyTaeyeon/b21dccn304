@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+
+    <!--- link custom style --->
+    <link rel="stylesheet" href="./assets/style1.css">
+
+    <!--- link google fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!--- link remix icon --->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <script src="https://kit.fontawesome.com/909864e3da.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Thông tin cá nhân</h2>
+        <form id="personal-info-form">
+            <div class="form-group">
+                <label for="fullname">Họ và tên:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Ngày tháng năm sinh:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="cccd">CCCD:</label>
+                <input type="text" id="cccd" name="cccd" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ thường trú:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <button type="submit"><a href="survey.html">Gửi</a></button>
+        </form>
+    </div>
+</body>
+</html>

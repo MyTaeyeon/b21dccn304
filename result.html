@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+</head>
+<body style="width:100vw; height:100vh; align-items: center; justify-content: center;">
+    <div id="result" style="position:absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); background-color: white; font-size: 35px; font-weight: 600;"></div>
+
+    <script>
+        // Truy xuất giá trị điểm từ localStorage
+        var diem = localStorage.getItem('diem');
+
+        // Hiển thị giá trị điểm trên trang web
+        var resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = 'Điểm của bạn là: ' + diem;
+    </script>
+</body>
+</html>
